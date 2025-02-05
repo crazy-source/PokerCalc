@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Poker Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Game</h2>
+
+        <!-- Create Game Form -->
+        <div id="create-game-section">
+            <h3>Create New Game</h3>
+            <form id="create-game-form">
+                <div class="form-group">
+                    <label for="game-name">Game Name</label>
+                    <input type="text" class="form-control" id="game-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="chip-to-money">Chip to Money Ratio</label>
+                    <input type="number" class="form-control" id="chip-to-money" required>
+                </div>
+                <div class="form-group">
+                    <label for="casino-man-type">Casino Man Type</label>
+                    <select class="form-control" id="casino-man-type">
+                        <option value="random">Random</option>
+                        <option value="select">Select</option>
+                    </select>
+                </div>
+                <div class="form-group" id="select-casino-man" style="display: none;">
+                    <label for="selected-casino-man">Select Casino Man</label>
+                    <select class="form-control" id="selected-casino-man">
+                        <!-- Populate with user list -->
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Game</button>
+            </form>
+        </div>
+
+        <!-- Add Player Form -->
+        <div id="add-player-section" style="display: none;">
+            <h3>Add Player</h3>
+            <form id="add-player-form">
+                <div class="form-group">
+                    <label for="player-to-add">Select Player</label>
+                    <select class="form-control" id="player-to-add">
+                        <!-- Populate with user list -->
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Add Player</button>
+            </form>
+        </div>
+
+        <!-- Update Buy-ins and Final Chips Forms -->
+        <div id="update-info-section" style="display: none;">
+            <h3>Update Player Info</h3>
+            <form id="update-buy-ins-form">
+                <div class="form-group">
+                    <label for="player-select">Select Player</label>
+                    <select class="form-control" id="player-select">
+                        <!-- Populate with players in the current game -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="buy-ins">Buy-ins</label>
+                    <input type="number" class="form-control" id="buy-ins">
+                </div>
+                <button type="submit" class="btn btn-info">Update Buy-ins</button>
+            </form>
+
+            <form id="update-final-chips-form">
+                <div class="form-group">
+                    <label for="final-chips">Final Chips</label>
+                    <input type="number" class="form-control" id="final-chips">
+                </div>
+                <button type="submit" class="btn btn-info">Update Final Chips</button>
+            </form>
+        </div>
+
+        <!-- Calculate Results Button -->
+        <button id="calculate-results-btn" class="btn btn-warning" style="display: none;">Calculate Results</button>
+
+        <!-- Results Display -->
+        <div id="results-display" style="display: none;">
+            <h3>Results</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Buy-ins</th>
+                        <th>Final Chips</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="results-table-body">
+                    <!-- Results will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

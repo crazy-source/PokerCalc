@@ -1,0 +1,174 @@
+/* style.css */
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles (Bootstrap's container class is used for responsiveness) */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    color: #0056b3; /* Darker blue color */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #80bdff; /* Blue border on focus */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Blue glow on focus */
+}
+
+/* Button Styles (using Bootstrap button classes) */
+.btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Gray color */
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #494f54; /* Darker gray on hover */
+}
+
+.btn-success {
+    background-color: #28a745; /* Green color */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #19692c; /* Darker green on hover */
+}
+
+.btn-info {
+    background-color: #17a2b8; /* Light blue color */
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #0f6674; /* Darker light blue on hover */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Yellow color */
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #b28704; /* Darker yellow on hover */
+}
+
+/* Table Styles */
+.table {
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ced4da;
+}
+
+.table thead {
+    background-color: #007bff; /* Blue header */
+    color: #fff;
+}
+
+/* Alert/Message Styles */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Light green */
+    border-color: #c3e6cb;
+    color: #155724; /* Dark green text */
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Light red */
+    border-color: #f5c6cb;
+    color: #721c24; /* Dark red text */
+}
+
+/* Navigation Styles (if you add a navbar later) */
+.navbar {
+    background-color: #0056b3; /* Dark blue */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-link {
+    color: #fff;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
